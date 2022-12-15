@@ -29,6 +29,10 @@ namespace DataStructureUsingBinarySearchTree
             binarySearchTree1.Display();
             binarySearchTree1.getSize();
 
+            
+            bool result = binarySearchTree1.ifExists(63, binarySearchTree1);
+            Console.WriteLine(result);
+
         }
     }
 }

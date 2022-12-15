@@ -70,6 +70,23 @@ namespace DataStructureUsingBinarySearchTree
         {
             Console.WriteLine("Size of BST is = " + (1 + this.leftCount + this.rightCount));
         }
+        public bool ifExists(T element, BinarySearchTree<T> node)
+        {
+            if (node == null)
+                return false;
+            if (node.NodeData.Equals(element))
+            {
+                Console.WriteLine("Found element in BST = " + node.NodeData);
+                return true;
+            }
+            else
+                Console.WriteLine("Current element is  in BST = " + node.NodeData);
+            if (element.CompareTo(node.NodeData) < 0)
+                ifExists(element, node.leftTree);
+            if (element.CompareTo(node.NodeData) > 0)
+                ifExists(element, node.rightTree);
+            return result;
+        }
 
     }
 }
