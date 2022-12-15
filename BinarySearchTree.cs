@@ -66,5 +66,10 @@ namespace DataStructureUsingBinarySearchTree
             }
         }
 
+        public void getSize()
+        {
+            Console.WriteLine("Size of BST is = " + (1 + this.leftCount + this.rightCount));
+        }
+
     }
 }
